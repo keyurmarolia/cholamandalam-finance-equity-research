@@ -2,5 +2,6 @@
 ~$*
 *.inspect.ndjson
 data/raw/
-research/
+research/*
+!research/Model_Review.md
 outputs/
