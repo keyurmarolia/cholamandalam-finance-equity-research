@@ -1,0 +1,6 @@
+.DS_Store
+~$*
+*.inspect.ndjson
+data/raw/
+research/
+outputs/
