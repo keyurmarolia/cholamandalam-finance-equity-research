@@ -1,28 +1,18 @@
-# Model review
+# Model review — 21 September 2026
 
-Publication review: 21 September 2026. Scope: repository presentation, saved workbook outputs, financial reconciliations and valuation arithmetic. The workbook was preserved unchanged.
+Corrected net income margin to include non-interest income without double counting; aligned expense and credit-cost denominators; replaced the regulatory-capital proxy with explicit book-equity intensity; restored historical share capital and opening cash; included pending CCD conversion and dilution; rebuilt the cash-flow bridge and reverse DCF.
 
-## Checks completed
+Checks passed: ten historical/forecast balance-sheet and cash reconciliations, five historical PAT figures, funding and equity roll-forwards, independent FCFE valuation, reverse-DCF price repricing, increased credit-cost and discount-rate sensitivities, and common formula-error scan.
 
-| Check | Result |
-| --- | --- |
-| README valuation figures | Agree with the saved workbook |
-| Balance sheet | Assets equal liabilities and equity across all ten historical and forecast years, within numerical precision |
-| Cash flow | Closing cash agrees with balance-sheet cash across all ten years |
-| Forecast equity roll-forward | Opening equity, profit, dividends, new funding and CCD conversion reconcile to closing equity |
-| FCFE valuation | Independently recomputed explicit and terminal present values, including the first-year fraction; INR 776.15 per share |
-| Reverse DCF | Independently recomputed implied terminal ROE of 33.8%; saved repricing matches INR 1,779 |
-| Saved formula results | No cached spreadsheet errors or formulas without saved values |
-| Workbook dependencies | No external workbook links |
+Base FCFE value: INR 776.153790 per share. Implied terminal ROE: 33.76171485%. Pro forma shares: 85.75611371 crore. Reference price: INR 1,779 on 18 September 2026.
 
-## Reading the valuation
+Limitations: management reporting asset base is calibrated; future costs and margins extend near-term commentary; book-equity intensity is not regulatory capital; other balance movements and cash-flow classifications are aggregate; CCD price and annual valuation stub are approximations. README and workbook disclose these assumptions. No assurance of error-free forecasts is implied.
 
-Borrowings are operating funding for this lender. FCFE deducts required equity reinvestment from profit, and debt is not deducted a second time. Required equity is modelled at 14% of net loans; this is an analytical capital-intensity assumption, not regulatory CAR.
 
-The 17% base terminal ROE is distinct from the model's FY2031 ROE. The reverse DCF changes terminal ROE while keeping the five-year forecast unchanged. Approximately 92.5% of base equity value comes from the terminal value, so long-term profitability, growth and cost of equity drive the result.
+## Publication verification — 13 October 2026
 
-## Limits of this review
+The latest saved workbook was compared with the preceding public version. The update changes 28 explanatory cells and workbook presentation; numeric cell values and formulas are unchanged. The published workbook is an exact copy of the updated local file.
 
-These checks inspect saved results and independently verify selected arithmetic; they do not constitute native Excel recalculation or a fresh cell-by-cell audit against every source filing. Prior sensitivity checks described in the main README were not repeated in this publication review.
+Repeated checks: all ten historical/forecast balance sheets and cash reconciliations, five forecast equity roll-forwards, saved formula errors and missing cached results. Explicit and terminal FCFE present values were independently recomputed, including the first-year fraction. The value remains INR 776.15 per share; reverse DCF implies 33.8% terminal ROE and reprices to INR 1,779. The existing preview still matches these results.
 
-The model uses standalone aggregate financials, estimated CCD dilution and a simplified cash-flow bridge. The 18 September 2026 reference price is a dated input, not a live quote. Operating assumptions, discount rate and terminal profitability remain estimates. This research is not an investment recommendation.
+This publication review uses saved workbook values. Native Excel recalculation, a fresh source-by-source audit and the earlier input sensitivities were not repeated. The reference price remains dated 18 September 2026.
